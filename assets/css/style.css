@@ -67,6 +67,7 @@ header img {
   position: absolute;
   right: -3rem;
   height: 150%;
+  animation: slideIn 5s infinite alternate ease-in-out;
 }
 
 header h1 {
@@ -100,6 +101,20 @@ header button {
 
 header button:hover {
   background-color: #000000;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(0);
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  to {
+    transform: translateX(-20px);
+    opacity: 0.5;
+  }
 }
 
 /* trending */
@@ -314,7 +329,7 @@ aside h3 {
 
 /* responsività */
 
-@media (max-width: 699px) {
+@media (max-width: 799px) {
   .space {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -395,7 +410,7 @@ aside h3 {
   }
 }
 
-@media (min-width: 700px) and (max-width: 1199px) {
+@media (min-width: 800px) and (max-width: 1199px) {
   .space {
     padding-left: 3rem;
     padding-right: 3rem;
