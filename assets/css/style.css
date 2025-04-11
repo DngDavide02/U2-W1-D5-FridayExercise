@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+  color: #181919;
+}
+
+.space {
+  padding-left: 15rem;
+  padding-right: 15rem;
+}
+
+/* nav */
+nav {
+  background-color: #ffc017;
+  border-bottom: #181919 1px solid;
+  padding: 2rem 0rem 2rem 0rem;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav .navLinks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.navLinks a {
+  text-decoration: none;
+  color: #181919;
+  font-weight: 400;
+}
+
+.navLinks button {
+  background-color: #181919;
+  color: #fff;
+  padding: 0.8rem 1rem;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+/* header */
+header {
+  background-color: #ffc017;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  border-bottom: #181919 1px solid;
+}
+
+header img {
+  position: absolute;
+  right: -3rem;
+  height: 150%;
+}
+
+header h1 {
+  font-size: 6rem;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -0.5rem;
+  font-family: "Spectral", serif;
+}
+
+header p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+header p span {
+  display: block;
+}
+
+header button {
+  background-color: #181919;
+  color: #fff;
+  padding: 0.8rem 3rem;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+/* trending */
+.trending {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 2rem;
+  font-weight: bold;
+}
+
+/* articles */
+
+article {
+  border-bottom: #1819193d 1px solid;
+  padding-bottom: 3rem;
+}
+.articles {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  flex-wrap: wrap;
+}
+
+.articles .article {
+  display: flex;
+  align-items: flex-start;
+  width: 30%;
+  margin-bottom: 3rem;
+}
+
+.articles .article img {
+  border-radius: 10px;
+  margin-right: 1rem;
+}
+
+.articles .article:first-child img {
+  border-radius: 20px;
+  margin-right: 1rem;
+}
+
+.articles .article .journalistName {
+  font-weight: bold;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.article h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.article .articleImage {
+  display: flex;
+  align-items: center;
+}
+
+.article .date {
+  font-weight: 400;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: #181919b1;
+}
+
+.articleNumber {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #18191937;
+  margin-right: 1rem;
+}
+
+.starArticle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* main */
+
+main {
+  display: flex;
+}
+
+.news {
+  width: 70%;
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+aside {
+  width: 30%;
+  padding-left: 3rem;
+  margin-left: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 3rem;
+}
+
+.newsForFlex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.journalistNameNews {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.journalistNameNews img {
+  border-radius: 50%;
+}
+
+.newsContent h2 {
+  font-weight: bold;
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+}
+
+.newsContent p {
+  color: #181919b1;
+}
+
+.newsContent .text {
+  margin-bottom: 1rem;
+}
+
+.dateFlex {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.dateFlex p span {
+  background-color: #18191919;
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
+}
+.newsContent div:last-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 2rem;
+}
+
+.contentImg {
+  margin-left: 4%;
+  height: auto;
+  width: 30%;
+}
+
+aside h3 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+.asideContent {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  border-bottom: #1819193d 1px solid;
+  padding-bottom: 3rem;
+}
+
+.asideContent div {
+  width: 30%;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 1rem;
+  border: #1819192e 1px solid;
+  margin-bottom: 0.2rem;
+}
