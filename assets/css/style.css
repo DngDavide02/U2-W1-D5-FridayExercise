@@ -20,6 +20,7 @@ nav {
   position: sticky;
   top: 0;
   z-index: 1000;
+  transition: background-color 0.5s ease;
 }
 
 nav .navLinks {
@@ -293,6 +294,26 @@ aside h3 {
   color: #1819198e;
 }
 
+.asideContent button:hover {
+  background-color: #1819190d;
+  cursor: pointer;
+}
+
+.asideLink {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.asideLink a {
+  text-decoration: none;
+  font-weight: 400;
+  color: #1819198e;
+  margin-top: 1rem;
+}
+
+/* responsività */
+
 @media screen and (max-width: 1700px) {
   .space {
     padding-left: 10rem;
@@ -317,22 +338,4 @@ aside h3 {
     margin-bottom: 0.2rem;
     color: #1819198e;
   }
-}
-
-.asideContent button:hover {
-  background-color: #1819190d;
-  cursor: pointer;
-}
-
-.asideLink {
-  display: flex;
-  gap: 1.5rem;
-  flex-wrap: wrap;
-}
-
-.asideLink a {
-  text-decoration: none;
-  font-weight: 400;
-  color: #1819198e;
-  margin-top: 1rem;
 }
