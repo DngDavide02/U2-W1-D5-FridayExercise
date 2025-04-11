@@ -45,6 +45,10 @@ nav .navLinks {
   font-size: 0.9rem;
 }
 
+nav .navLinks button:hover {
+  background-color: #000000;
+}
+
 /* header */
 header {
   background-color: #ffc017;
@@ -91,6 +95,10 @@ header button {
   border: none;
   cursor: pointer;
   font-size: 1rem;
+}
+
+header button:hover {
+  background-color: #000000;
 }
 
 /* trending */
@@ -275,7 +283,7 @@ aside h3 {
 }
 
 .asideContent button {
-  width: 30%;
+  width: 40%;
   background-color: transparent;
   box-sizing: border-box;
   text-align: center;
@@ -283,6 +291,32 @@ aside h3 {
   border: #1819192e 1px solid;
   margin-bottom: 0.2rem;
   color: #1819198e;
+}
+
+@media screen and (max-width: 1700px) {
+  .space {
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+
+  .asideContent {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    border-bottom: #1819193d 1px solid;
+    padding-bottom: 3rem;
+  }
+
+  .asideContent button {
+    width: 48%;
+    background-color: transparent;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 0.5rem;
+    border: #1819192e 1px solid;
+    margin-bottom: 0.2rem;
+    color: #1819198e;
+  }
 }
 
 .asideContent button:hover {
