@@ -339,3 +339,79 @@ aside h3 {
     color: #1819198e;
   }
 }
+
+@media screen and (max-width: 700px) {
+  .space {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  nav img {
+    width: 10rem;
+  }
+
+  .navLinks a:nth-child(1),
+  .navLinks a:nth-child(2),
+  .navLinks a:nth-child(3) {
+    display: none;
+  }
+
+  header img {
+    display: none;
+  }
+
+  header h1 {
+    font-size: 4.5rem;
+    letter-spacing: -0.2rem;
+  }
+
+  header p {
+    font-size: 1.2rem;
+  }
+
+  .articles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .articles .article {
+    width: 80%;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+    overflow: visible;
+    align-items: stretch;
+  }
+
+  aside {
+    width: 100%;
+    padding-left: 0;
+    margin-left: 0;
+    order: 1;
+    position: static;
+    z-index: 0;
+  }
+
+  .news {
+    width: 100%;
+    margin-top: 2rem;
+    order: 2;
+  }
+
+  .dateFlex p span {
+    display: block;
+    margin-top: 1rem;
+    text-align: center;
+  }
+
+  .contentImg {
+    width: 45%;
+    margin-left: 1rem;
+    height: auto;
+  }
+}
