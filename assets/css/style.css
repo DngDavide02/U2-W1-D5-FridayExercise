@@ -4,6 +4,10 @@ body {
   color: #181919;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .space {
   padding-left: 15rem;
   padding-right: 15rem;
